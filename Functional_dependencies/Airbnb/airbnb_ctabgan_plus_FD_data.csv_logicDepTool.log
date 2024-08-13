@@ -1,0 +1,13 @@
+Check for functional dependencies in file 'airbnb_ctabgan_plus_FD_data.csv'
+Rows: 3048
+Cols: 14
+----
+
+Keys: []
+----
+
+{"id", "gender", "signup_flow", "affiliate_channel", "affiliate_provider", "first_affiliate_tracked", "first_device_type", "first_browser", "country_destination", "action_type", "device_type"} -> {"language"}
+{"id", "gender", "signup_flow", "affiliate_channel", "affiliate_provider", "signup_app", "first_device_type", "first_browser", "country_destination", "action_type", "device_type"} -> {"language"}
+{"id", "gender", "signup_flow", "affiliate_channel", "first_affiliate_tracked", "signup_app", "first_device_type", "first_browser", "country_destination", "action_type", "device_type"} -> {"language"}
+{"id", "gender", "signup_method", "signup_flow", "affiliate_channel", "affiliate_provider", "first_affiliate_tracked", "signup_app", "first_browser", "country_destination", "action_type", "device_type"} -> {"language"}
+.

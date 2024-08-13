@@ -1,0 +1,13 @@
+Check for functional dependencies in file 'migraine_ctgan_FD_data.csv'
+Rows: 377
+Cols: 17
+----
+
+Keys: []
+----
+
+{"Location", "Sensory", "Duration", "Frequency", "Intensity", "Visual", "Vomit"} -> {"Diplopia"}
+{"Location", "Character", "Vertigo", "Frequency", "Intensity", "Visual", "Vomit", "Type"} -> {"Diplopia"}
+{"Location", "Character", "Sensory", "Frequency", "Intensity", "Visual", "Vomit", "Type"} -> {"Diplopia"}
+{"Location", "Character", "Duration", "Frequency", "Intensity", "Visual", "Vomit", "Type"} -> {"Diplopia"}
+.

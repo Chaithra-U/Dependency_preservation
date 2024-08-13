@@ -1,0 +1,9 @@
+Check for functional dependencies in file 'airbnb_ctgan_FD_data.csv'
+Rows: 3048
+Cols: 14
+----
+
+Keys: []
+----
+
+.

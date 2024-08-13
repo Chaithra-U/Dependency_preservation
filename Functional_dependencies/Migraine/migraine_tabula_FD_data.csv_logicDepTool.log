@@ -1,0 +1,64 @@
+Check for functional dependencies in file 'migraine_tabula_FD_data.csv'
+Rows: 299
+Cols: 17
+----
+
+Keys: []
+----
+
+{"Location"} -> {"Character", "Diplopia"}
+{"Character"} -> {"Location", "Diplopia"}
+{"Dysphasia"} -> {"Diplopia"}
+{"Vertigo"} -> {"Diplopia"}
+{"Tinnitus"} -> {"Diplopia"}
+{"Sensory"} -> {"Diplopia"}
+{"Hypoacusis"} -> {"Diplopia"}
+{"Defect"} -> {"Diplopia"}
+{"Conscience"} -> {"Diplopia"}
+{"DPF"} -> {"Diplopia"}
+{"Duration"} -> {"Diplopia"}
+{"Frequency"} -> {"Diplopia"}
+{"Intensity"} -> {"Diplopia"}
+{"Visual"} -> {"Diplopia"}
+{"Vomit"} -> {"Diplopia"}
+{"Type"} -> {"Diplopia"}
+{"Intensity", "Visual"} -> {"Location", "Character"}
+{"Visual", "Type"} -> {"Location", "Character"}
+{"Vertigo", "Defect", "Visual", "Vomit"} -> {"Conscience"}
+{"Tinnitus", "Defect", "Vomit", "Type"} -> {"Conscience"}
+{"Sensory", "Defect", "Vomit", "Type"} -> {"Conscience"}
+{"Hypoacusis", "Defect", "Vomit", "Type"} -> {"Conscience"}
+{"Defect", "Frequency", "Vomit", "Type"} -> {"Conscience"}
+{"Defect", "Intensity", "Vomit", "Type"} -> {"Conscience"}
+{"Defect", "Visual", "Vomit", "Type"} -> {"Conscience"}
+{"Vertigo", "Hypoacusis", "Conscience", "Frequency", "Visual"} -> {"Defect"}
+{"Defect", "DPF", "Frequency", "Visual", "Vomit"} -> {"Conscience"}
+{"Defect", "DPF", "Intensity", "Visual", "Vomit"} -> {"Conscience"}
+{"Tinnitus", "Conscience", "Duration", "Frequency", "Type"} -> {"Defect"}
+{"Hypoacusis", "Conscience", "Duration", "Frequency", "Type"} -> {"Defect"}
+{"Vertigo", "Duration", "Frequency", "Intensity", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Conscience", "Frequency", "Visual", "Type"} -> {"Defect"}
+{"Tinnitus", "Conscience", "Frequency", "Visual", "Type"} -> {"Defect"}
+{"Sensory", "Conscience", "Frequency", "Visual", "Type"} -> {"Defect"}
+{"Conscience", "DPF", "Frequency", "Visual", "Type"} -> {"Defect"}
+{"Conscience", "Duration", "Frequency", "Visual", "Type"} -> {"Defect"}
+{"Vertigo", "Duration", "Intensity", "Visual", "Type"} -> {"Tinnitus"}
+{"Conscience", "Frequency", "Visual", "Vomit", "Type"} -> {"Defect"}
+{"Vertigo", "Tinnitus", "Conscience", "Duration", "Frequency", "Visual"} -> {"Defect"}
+{"Vertigo", "Conscience", "DPF", "Duration", "Frequency", "Type"} -> {"Defect"}
+{"Vertigo", "Conscience", "Duration", "Frequency", "Intensity", "Type"} -> {"Defect"}
+{"Dysphasia", "Vertigo", "Sensory", "Duration", "Visual", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Duration", "Frequency", "Visual", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Tinnitus", "Conscience", "DPF", "Duration", "Frequency", "Intensity"} -> {"Defect"}
+{"Vertigo", "Sensory", "Hypoacusis", "DPF", "Duration", "Frequency", "Visual"} -> {"Tinnitus"}
+{"Location", "Vertigo", "Tinnitus", "Sensory", "Conscience", "DPF", "Duration", "Frequency"} -> {"Defect"}
+{"Character", "Vertigo", "Tinnitus", "Sensory", "Conscience", "DPF", "Duration", "Frequency"} -> {"Defect"}
+{"Dysphasia", "Vertigo", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency", "Intensity"} -> {"Defect"}
+{"Dysphasia", "Vertigo", "Sensory", "Defect", "DPF", "Duration", "Frequency", "Visual"} -> {"Tinnitus"}
+{"Vertigo", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency", "Intensity", "Vomit"} -> {"Defect"}
+{"Vertigo", "Sensory", "Defect", "DPF", "Duration", "Frequency", "Visual", "Vomit"} -> {"Tinnitus"}
+{"Location", "Dysphasia", "Vertigo", "Sensory", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency"} -> {"Defect"}
+{"Character", "Dysphasia", "Vertigo", "Sensory", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency"} -> {"Defect"}
+{"Location", "Vertigo", "Sensory", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency", "Vomit"} -> {"Defect"}
+{"Character", "Vertigo", "Sensory", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency", "Vomit"} -> {"Defect"}
+.

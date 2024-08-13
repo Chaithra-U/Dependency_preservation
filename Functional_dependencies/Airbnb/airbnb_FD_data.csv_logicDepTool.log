@@ -1,0 +1,41 @@
+Check for functional dependencies in file 'airbnb_FD_data.csv'
+Rows: 3048
+Cols: 14
+----
+
+Keys: []
+----
+
+{"id"} -> {"gender", "signup_method", "signup_flow", "language", "affiliate_channel", "affiliate_provider", "first_affiliate_tracked", "signup_app", "first_device_type", "first_browser", "country_destination"}
+{"signup_method", "signup_app"} -> {"signup_flow"}
+{"affiliate_channel", "signup_app"} -> {"signup_flow"}
+{"affiliate_provider", "signup_app"} -> {"signup_flow"}
+{"gender", "signup_flow", "first_device_type", "first_browser"} -> {"signup_app"}
+{"affiliate_channel", "first_affiliate_tracked", "first_device_type", "country_destination"} -> {"affiliate_provider"}
+{"gender", "signup_flow", "first_browser", "country_destination"} -> {"signup_app"}
+{"gender", "signup_flow", "first_browser", "device_type"} -> {"signup_app"}
+{"affiliate_channel", "first_affiliate_tracked", "country_destination", "device_type"} -> {"affiliate_provider"}
+{"first_affiliate_tracked", "signup_app", "country_destination", "device_type"} -> {"signup_flow"}
+{"signup_app", "first_browser", "country_destination", "device_type"} -> {"signup_flow"}
+{"gender", "language", "affiliate_channel", "first_affiliate_tracked", "country_destination"} -> {"affiliate_provider"}
+{"gender", "affiliate_channel", "first_affiliate_tracked", "first_browser", "country_destination"} -> {"affiliate_provider"}
+{"gender", "language", "first_affiliate_tracked", "first_browser", "device_type"} -> {"first_device_type"}
+{"signup_flow", "language", "first_affiliate_tracked", "first_browser", "device_type"} -> {"first_device_type"}
+{"gender", "signup_flow", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"signup_flow", "affiliate_channel", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"signup_flow", "affiliate_provider", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"gender", "first_affiliate_tracked", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"signup_method", "first_affiliate_tracked", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"signup_flow", "first_affiliate_tracked", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"gender", "signup_app", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"affiliate_channel", "signup_app", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"affiliate_provider", "signup_app", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"first_affiliate_tracked", "signup_app", "first_browser", "country_destination", "device_type"} -> {"first_device_type"}
+{"gender", "signup_flow", "language", "affiliate_channel", "first_browser", "device_type"} -> {"first_device_type"}
+{"signup_method", "language", "affiliate_channel", "first_affiliate_tracked", "first_browser", "device_type"} -> {"first_device_type"}
+{"signup_method", "language", "affiliate_provider", "first_affiliate_tracked", "first_browser", "device_type"} -> {"first_device_type"}
+{"gender", "language", "affiliate_channel", "signup_app", "first_browser", "device_type"} -> {"first_device_type"}
+{"signup_method", "language", "first_affiliate_tracked", "signup_app", "first_browser", "device_type"} -> {"first_device_type"}
+{"language", "affiliate_channel", "first_affiliate_tracked", "signup_app", "first_browser", "device_type"} -> {"first_device_type"}
+{"language", "affiliate_provider", "first_affiliate_tracked", "signup_app", "first_browser", "device_type"} -> {"first_device_type"}
+.

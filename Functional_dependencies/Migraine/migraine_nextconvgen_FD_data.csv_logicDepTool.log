@@ -1,0 +1,122 @@
+Check for functional dependencies in file 'migraine_nextconvgen_FD_data.csv'
+Rows: 358
+Cols: 17
+----
+
+Keys: []
+----
+
+{"Location"} -> {"Character"}
+{"Character"} -> {"Location"}
+{"Intensity"} -> {"Location", "Character"}
+{"Type"} -> {"Location", "Character"}
+{"Tinnitus", "Sensory", "Visual"} -> {"Hypoacusis"}
+{"Tinnitus", "Intensity", "Visual"} -> {"Hypoacusis"}
+{"Tinnitus", "Duration", "Type"} -> {"Defect"}
+{"Duration", "Frequency", "Type"} -> {"Defect"}
+{"Location", "Vertigo", "Tinnitus", "Duration"} -> {"Defect"}
+{"Character", "Vertigo", "Tinnitus", "Duration"} -> {"Defect"}
+{"Location", "Vertigo", "Duration", "Frequency"} -> {"Defect"}
+{"Character", "Vertigo", "Duration", "Frequency"} -> {"Defect"}
+{"Vertigo", "Tinnitus", "Duration", "Intensity"} -> {"Defect"}
+{"Vertigo", "Duration", "Frequency", "Intensity"} -> {"Defect"}
+{"Location", "Sensory", "Diplopia", "Visual"} -> {"Defect"}
+{"Character", "Sensory", "Diplopia", "Visual"} -> {"Defect"}
+{"Vertigo", "Sensory", "Diplopia", "Visual"} -> {"Hypoacusis", "Defect"}
+{"Vertigo", "Tinnitus", "Duration", "Visual"} -> {"Defect"}
+{"Vertigo", "Sensory", "Duration", "Visual"} -> {"Hypoacusis"}
+{"Location", "Diplopia", "Duration", "Visual"} -> {"Defect"}
+{"Character", "Diplopia", "Duration", "Visual"} -> {"Defect"}
+{"Vertigo", "Diplopia", "Duration", "Visual"} -> {"Defect"}
+{"Sensory", "Diplopia", "Duration", "Visual"} -> {"Defect"}
+{"Vertigo", "Duration", "Frequency", "Visual"} -> {"Defect"}
+{"Diplopia", "Duration", "Frequency", "Visual"} -> {"Defect"}
+{"Vertigo", "Sensory", "Intensity", "Visual"} -> {"Hypoacusis"}
+{"Sensory", "Diplopia", "Intensity", "Visual"} -> {"Defect"}
+{"Diplopia", "Duration", "Intensity", "Visual"} -> {"Defect"}
+{"Location", "Diplopia", "Visual", "Vomit"} -> {"Defect"}
+{"Character", "Diplopia", "Visual", "Vomit"} -> {"Defect"}
+{"Vertigo", "Diplopia", "Visual", "Vomit"} -> {"Defect"}
+{"Sensory", "Diplopia", "Visual", "Vomit"} -> {"Defect"}
+{"Diplopia", "Frequency", "Visual", "Vomit"} -> {"Defect"}
+{"Diplopia", "Intensity", "Visual", "Vomit"} -> {"Defect"}
+{"Sensory", "Diplopia", "Visual", "Type"} -> {"Defect"}
+{"Tinnitus", "Duration", "Visual", "Type"} -> {"Diplopia"}
+{"Diplopia", "Duration", "Visual", "Type"} -> {"Defect"}
+{"Duration", "Frequency", "Visual", "Type"} -> {"Diplopia"}
+{"Vertigo", "Intensity", "Visual", "Type"} -> {"Hypoacusis"}
+{"Tinnitus", "Visual", "Vomit", "Type"} -> {"Defect"}
+{"Diplopia", "Visual", "Vomit", "Type"} -> {"Defect"}
+{"Frequency", "Visual", "Vomit", "Type"} -> {"Defect"}
+{"Vertigo", "Tinnitus", "Sensory", "Defect", "Visual"} -> {"Diplopia"}
+{"Vertigo", "Tinnitus", "Sensory", "Duration", "Visual"} -> {"Diplopia"}
+{"Dysphasia", "Tinnitus", "DPF", "Duration", "Visual"} -> {"Hypoacusis"}
+{"Vertigo", "Tinnitus", "DPF", "Duration", "Visual"} -> {"Hypoacusis"}
+{"Tinnitus", "Conscience", "DPF", "Duration", "Visual"} -> {"Hypoacusis"}
+{"Dysphasia", "Tinnitus", "Duration", "Frequency", "Visual"} -> {"Hypoacusis"}
+{"Vertigo", "Tinnitus", "Duration", "Frequency", "Visual"} -> {"Hypoacusis", "Diplopia"}
+{"Tinnitus", "Conscience", "Duration", "Frequency", "Visual"} -> {"Hypoacusis"}
+{"Vertigo", "Sensory", "Defect", "Intensity", "Visual"} -> {"Diplopia"}
+{"Vertigo", "Tinnitus", "Sensory", "Visual", "Vomit"} -> {"Diplopia", "Defect"}
+{"Vertigo", "Tinnitus", "Duration", "Visual", "Vomit"} -> {"Diplopia"}
+{"Vertigo", "Defect", "Duration", "Visual", "Vomit"} -> {"Diplopia"}
+{"Dysphasia", "Tinnitus", "Frequency", "Visual", "Vomit"} -> {"Hypoacusis"}
+{"Vertigo", "Tinnitus", "Frequency", "Visual", "Vomit"} -> {"Hypoacusis"}
+{"Vertigo", "Sensory", "Frequency", "Visual", "Vomit"} -> {"Hypoacusis", "Diplopia", "Defect"}
+{"Tinnitus", "Conscience", "Frequency", "Visual", "Vomit"} -> {"Hypoacusis"}
+{"Vertigo", "Duration", "Frequency", "Visual", "Vomit"} -> {"Diplopia"}
+{"Vertigo", "Frequency", "Intensity", "Visual", "Vomit"} -> {"Defect"}
+{"Dysphasia", "Vertigo", "Duration", "Frequency", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Conscience", "Duration", "Frequency", "Type"} -> {"Tinnitus"}
+{"Tinnitus", "Sensory", "Defect", "Visual", "Type"} -> {"Diplopia"}
+{"Sensory", "Hypoacusis", "Defect", "Visual", "Type"} -> {"Diplopia"}
+{"Vertigo", "Defect", "Duration", "Visual", "Type"} -> {"Diplopia"}
+{"Sensory", "Defect", "Duration", "Visual", "Type"} -> {"Diplopia"}
+{"Defect", "Conscience", "Duration", "Visual", "Type"} -> {"Diplopia"}
+{"Vertigo", "Sensory", "Frequency", "Visual", "Type"} -> {"Hypoacusis"}
+{"Sensory", "Defect", "Frequency", "Visual", "Type"} -> {"Diplopia"}
+{"Vertigo", "Duration", "Frequency", "Visual", "Type"} -> {"Hypoacusis"}
+{"Sensory", "Defect", "Intensity", "Visual", "Type"} -> {"Diplopia"}
+{"Sensory", "Duration", "Intensity", "Visual", "Type"} -> {"Hypoacusis"}
+{"Duration", "Frequency", "Intensity", "Visual", "Type"} -> {"Hypoacusis"}
+{"Vertigo", "Tinnitus", "Visual", "Vomit", "Type"} -> {"Hypoacusis"}
+{"Tinnitus", "Sensory", "Visual", "Vomit", "Type"} -> {"Diplopia"}
+{"Sensory", "Duration", "Visual", "Vomit", "Type"} -> {"Hypoacusis"}
+{"Defect", "Duration", "Visual", "Vomit", "Type"} -> {"Diplopia"}
+{"Vertigo", "Frequency", "Visual", "Vomit", "Type"} -> {"Hypoacusis"}
+{"Sensory", "Frequency", "Visual", "Vomit", "Type"} -> {"Diplopia"}
+{"Duration", "Intensity", "Visual", "Vomit", "Type"} -> {"Hypoacusis"}
+{"Vertigo", "Tinnitus", "DPF", "Duration", "Intensity", "Visual"} -> {"Diplopia"}
+{"Vertigo", "Sensory", "Duration", "Frequency", "Intensity", "Visual"} -> {"Diplopia"}
+{"Sensory", "DPF", "Duration", "Frequency", "Intensity", "Visual"} -> {"Hypoacusis"}
+{"Vertigo", "Sensory", "Hypoacusis", "Defect", "Visual", "Vomit"} -> {"Diplopia"}
+{"Vertigo", "Tinnitus", "DPF", "Intensity", "Visual", "Vomit"} -> {"Defect"}
+{"Sensory", "Duration", "Frequency", "Intensity", "Visual", "Vomit"} -> {"Hypoacusis"}
+{"Dysphasia", "Tinnitus", "Duration", "Visual", "Vomit", "Type"} -> {"Hypoacusis"}
+{"Tinnitus", "Conscience", "Duration", "Visual", "Vomit", "Type"} -> {"Hypoacusis"}
+{"Dysphasia", "Sensory", "Hypoacusis", "Duration", "Frequency", "Visual", "Type"} -> {"Tinnitus"}
+{"Sensory", "Hypoacusis", "Conscience", "Duration", "Frequency", "Visual", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Sensory", "Duration", "Frequency", "Intensity", "Visual", "Type"} -> {"Tinnitus"}
+{"Sensory", "Conscience", "Duration", "Frequency", "Intensity", "Visual", "Type"} -> {"Tinnitus"}
+{"Sensory", "Diplopia", "Conscience", "Duration", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Sensory", "Defect", "Conscience", "Duration", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Sensory", "Duration", "Frequency", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Hypoacusis", "Duration", "Frequency", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Sensory", "Conscience", "Duration", "Frequency", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Hypoacusis", "Conscience", "Duration", "Frequency", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Duration", "Frequency", "Intensity", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Conscience", "Duration", "Frequency", "Intensity", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Diplopia", "Conscience", "DPF", "Duration", "Frequency", "Visual"} -> {"Tinnitus"}
+{"Vertigo", "Hypoacusis", "Diplopia", "Conscience", "DPF", "Duration", "Frequency", "Visual"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Conscience", "DPF", "Duration", "Frequency", "Intensity", "Visual"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Conscience", "DPF", "Duration", "Frequency", "Visual", "Vomit"} -> {"Tinnitus"}
+{"Vertigo", "Hypoacusis", "Conscience", "DPF", "Duration", "Frequency", "Visual", "Vomit"} -> {"Tinnitus"}
+{"Dysphasia", "Vertigo", "Sensory", "Diplopia", "Duration", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Vertigo", "Sensory", "Defect", "Duration", "Visual", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Vertigo", "Sensory", "Hypoacusis", "Defect", "DPF", "Duration", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Vertigo", "Sensory", "Diplopia", "Defect", "DPF", "Duration", "Vomit", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Hypoacusis", "Defect", "Conscience", "DPF", "Duration", "Vomit", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Diplopia", "Defect", "Conscience", "DPF", "Duration", "Vomit", "Type"} -> {"Tinnitus"}
+{"Dysphasia", "Vertigo", "Sensory", "Defect", "DPF", "Duration", "Intensity", "Vomit", "Type"} -> {"Tinnitus"}
+{"Vertigo", "Sensory", "Defect", "Conscience", "DPF", "Duration", "Intensity", "Vomit", "Type"} -> {"Tinnitus"}
+.

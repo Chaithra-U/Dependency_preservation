@@ -1,0 +1,26 @@
+Check for functional dependencies in file 'migraine_tvae_FD_data.csv'
+Rows: 222
+Cols: 17
+----
+
+Keys: []
+----
+
+{"Location"} -> {"Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Character"} -> {"Location", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Dysphasia"} -> {"Location", "Character", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Vertigo"} -> {"Location", "Character", "Dysphasia", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Tinnitus"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Sensory"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Hypoacusis"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Diplopia", "Defect", "Conscience"}
+{"Diplopia"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Defect", "Conscience"}
+{"Defect"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Conscience"}
+{"Conscience"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect"}
+{"DPF"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Duration"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Frequency"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Intensity"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Visual"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Vomit"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+{"Type"} -> {"Location", "Character", "Dysphasia", "Vertigo", "Tinnitus", "Sensory", "Hypoacusis", "Diplopia", "Defect", "Conscience"}
+.
