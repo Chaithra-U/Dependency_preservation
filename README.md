@@ -14,7 +14,7 @@ needs and opportunities to develop task-specific synthetic tabular data generati
 
 This project uses five publicly available datasets for evaluating logical and functional dependency preservation in synthetic tabular data. Below is a list of the datasets and relevant preprocessing details.
 
-### 1. **Airbnb Dataset**
+#### 1. **Airbnb Dataset**
 - **Source**: [Kaggle - Airbnb New User Bookings](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/data)
 - **Description**: Contains user and session-level data from Airbnb.
 - **Preprocessing**:
@@ -22,19 +22,19 @@ This project uses five publicly available datasets for evaluating logical and fu
   - For the experiments, a subset of **10,000 unique users** and their corresponding session records was selected.
   - The processed dataset is stored as `merged_airbnb_reduced.csv` under the path:
     ```
-    logical_dependencies/real_data/merged_airbnb_reduced.csv
+    logical_dependencies/Real_datasets/merged_airbnb_reduced.csv
     ```
 
-### 2. **Migraine Dataset**
+#### 2. **Migraine Dataset**
 - **Source**: [Code Ocean Capsule](https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv)
 
-### 3. **Liver Cirrhosis Dataset**
+#### 3. **Liver Cirrhosis Dataset**
 - **Source**: [Kaggle - Cirrhosis Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/cirrhosis-prediction-dataset/code)
 
-### 4. **Obesity Dataset**
+#### 4. **Obesity Dataset**
 - **Source**: [UCI Repository DOI: 10.24432/C5H31Z](https://doi.org/10.24432/C5H31Z)
 
-### 5. **Stroke Dataset**
+#### 5. **Stroke Dataset**
 - **Source**: [Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/code)
 
 ## Installation
