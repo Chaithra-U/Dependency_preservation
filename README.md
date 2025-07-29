@@ -11,15 +11,15 @@ that some tabular synthetic data generation models can preserve inter-attribute 
 needs and opportunities to develop task-specific synthetic tabular data generation models.
 
 ## Datasets used in the experiment
-Migraine https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv
+Migraine: https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv
 
-Liver cirrhosis https://www.kaggle.com/datasets/fedesoriano/cirrhosis-prediction-dataset/code
+Liver cirrhosis: https://www.kaggle.com/datasets/fedesoriano/cirrhosis-prediction-dataset/code
 
-Obesity https://doi.org/10.24432/C5H31Z
+Obesity: https://doi.org/10.24432/C5H31Z
 
-Airbnb https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/data
+Airbnb: https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/data
 
-Stroke https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/code
+Stroke: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/code
 
 ## Installation
 #### Clone the Repository
