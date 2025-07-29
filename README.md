@@ -10,16 +10,32 @@ available synthetic tabular data generation algorithms do not fully preserve fun
 that some tabular synthetic data generation models can preserve inter-attribute logical dependencies. Our review and comparison of the state-of-the-art reveal research
 needs and opportunities to develop task-specific synthetic tabular data generation models.
 
-## Datasets used in the experiment
-Migraine: https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv
+## Datasets Used in the Experiment
 
-Liver cirrhosis: https://www.kaggle.com/datasets/fedesoriano/cirrhosis-prediction-dataset/code
+This project uses five publicly available datasets for evaluating logical and functional dependency preservation in synthetic tabular data. Below is a list of the datasets and relevant preprocessing details.
 
-Obesity: https://doi.org/10.24432/C5H31Z
+### 1. **Airbnb Dataset**
+- **Source**: [Kaggle - Airbnb New User Bookings](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/data)
+- **Description**: Contains user and session-level data from Airbnb.
+- **Preprocessing**:
+  - The data includes two main tables: `users` and `sessions`, where each user can have one or more session records.
+  - For the experiments, a subset of **10,000 unique users** and their corresponding session records was selected.
+  - The processed dataset is stored as `merged_airbnb_reduced.csv` under the path:
+    ```
+    logical_dependencies/real_data/merged_airbnb_reduced.csv
+    ```
 
-Airbnb: https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/data
+### 2. **Migraine Dataset**
+- **Source**: [Code Ocean Capsule](https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv)
 
-Stroke: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/code
+### 3. **Liver Cirrhosis Dataset**
+- **Source**: [Kaggle - Cirrhosis Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/cirrhosis-prediction-dataset/code)
+
+### 4. **Obesity Dataset**
+- **Source**: [UCI Repository DOI: 10.24432/C5H31Z](https://doi.org/10.24432/C5H31Z)
+
+### 5. **Stroke Dataset**
+- **Source**: [Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/code)
 
 ## Installation
 #### Clone the Repository
