@@ -10,6 +10,13 @@ available synthetic tabular data generation algorithms do not fully preserve fun
 that some tabular synthetic data generation models can preserve inter-attribute logical dependencies. Our review and comparison of the state-of-the-art reveal research
 needs and opportunities to develop task-specific synthetic tabular data generation models.
 
+## Datasets used in the experiment
+Migraine https://codeocean.com/capsule/1269964/tree/v1/data/migraine.csv
+Liver cirrhosis https://www.kaggle.com/datasets/fedesoriano/cirrhosis-prediction-dataset/code
+Obesity https://doi.org/10.24432/C5H31Z
+Airbnb https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/data
+Stroke https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/code
+
 ## Installation
 #### Clone the Repository
 Clone the repository to your local machine using the following command:
